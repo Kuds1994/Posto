@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottomSheet"
+        style="@style/Widget.MaterialComponents.BottomSheet.Modal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_peekHeight="0dp"
+        app:cardBackgroundColor="#eee"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="1dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/fragment_posto" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLocalizacaoCadastro"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="100dp"
+        android:textColor="@color/colorAccent"
+        app:backgroundTint="@android:color/white"
+        app:icon="@drawable/ic_baseline_my_location_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTint="@color/colorAccent"
+        app:layout_anchor="@id/textView19"
+        app:layout_anchorGravity="top|end"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        app:layout_anchor="@id/floatingActionButton"
+        app:layout_anchorGravity="top|end" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_search_24"
+        app:backgroundTint="@color/design_default_color_background"
+        app:layout_anchor="@id/textView20"
+        app:layout_anchorGravity="top|end" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        app:layout_anchor="@id/bottomSheet"
+        app:layout_anchorGravity="top|end" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

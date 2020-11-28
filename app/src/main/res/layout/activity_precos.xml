@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="650dp"
+        tools:context=".ui.PrecosActivity"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/campo_gnv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDiesel"
+            tools:text="@string/campo_gnv" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/campo_diesel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutAlcool"
+            tools:text="@string/campo_diesel" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/campo_gasolina_aditivada"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutGasolina"
+            tools:text="@string/campo_gasolina_aditivada" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/campo_alcool"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutAditivada"
+            tools:text="@string/campo_alcool" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutGasolina"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:background="@color/design_default_color_background"
+            app:boxBackgroundColor="@color/design_default_color_background"
+            app:boxStrokeColor="@color/colorAccent"
+            app:endIconTint="@color/design_default_color_background"
+            app:hintTextColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPreco"
+            app:startIconTint="@color/design_default_color_background">
+
+            <me.abhinay.input.CurrencyEditText
+                android:id="@+id/campoGasolina"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:paddingTop="12dp"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAditivada"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            app:boxBackgroundColor="@color/design_default_color_background"
+            app:boxStrokeColor="@color/colorAccent"
+            app:endIconTint="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:startIconTint="@color/colorAccent">
+
+            <me.abhinay.input.CurrencyEditText
+                android:id="@+id/campoAditivada"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:inputType="numberDecimal"
+                android:paddingTop="12dp"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAlcool"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            app:boxBackgroundColor="@color/design_default_color_background"
+            app:boxStrokeColor="@color/colorAccent"
+            app:endIconTint="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:startIconTint="@color/colorAccent">
+
+            <me.abhinay.input.CurrencyEditText
+                android:id="@+id/campoAlcool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:inputType="numberDecimal"
+                android:paddingTop="12dp"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutDiesel"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            app:boxBackgroundColor="@color/design_default_color_background"
+            app:boxStrokeColor="@color/colorAccent"
+            app:endIconTint="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:startIconTint="@color/colorAccent">
+
+            <me.abhinay.input.CurrencyEditText
+                android:id="@+id/campoDiesel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:inputType="numberDecimal"
+                android:paddingTop="12dp"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutGnv"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            app:boxBackgroundColor="@color/design_default_color_background"
+            app:boxStrokeColor="@color/colorAccent"
+            app:endIconTint="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:startIconTint="@color/colorAccent">
+
+            <me.abhinay.input.CurrencyEditText
+                android:id="@+id/campoGnv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:inputType="numberDecimal"
+                android:paddingTop="12dp"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutEtanol"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            app:boxBackgroundColor="@color/design_default_color_background"
+            app:boxStrokeColor="@color/colorAccent"
+            app:endIconTint="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:startIconTint="@color/colorAccent">
+
+            <me.abhinay.input.CurrencyEditText
+                android:id="@+id/campoEtanol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:inputType="numberDecimal"
+                android:paddingTop="12dp"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/campo_gasolina"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/campo_gasolina" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="atualizarDados"
+            android:text="@string/salvar"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/etanol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutGnv" />
+
+        <TextView
+            android:id="@+id/textViewEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="editar"
+            android:text="@string/editar"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/real"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayoutAditivada"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:text="@string/real" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/real"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayoutGasolina"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPreco"
+            tools:text="@string/real" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/real"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayoutAlcool"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:text="@string/real" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/real"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayoutDiesel"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:text="@string/real" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/real"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayoutGnv"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:text="@string/real" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/real"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayoutEtanol"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:text="@string/real" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

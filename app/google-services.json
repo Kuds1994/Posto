@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "930680858858",
+    "firebase_url": "https://tcc-notificacoes.firebaseio.com",
+    "project_id": "tcc-notificacoes",
+    "storage_bucket": "tcc-notificacoes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930680858858:android:8b39afa115c5b760868f93",
+        "android_client_info": {
+          "package_name": "com.kudu.posto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930680858858-7l834jrrdk6s3vdc1ijvddsgiutvak7b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kudu.posto",
+            "certificate_hash": "10bb52c9089bf47038cf30cedc40015361d55584"
+          }
+        },
+        {
+          "client_id": "930680858858-476pu2qs3950q0ktoar1pd7s4t72v7bd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDancaEi-rUbZMsbWm668XcbgottxACZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930680858858-476pu2qs3950q0ktoar1pd7s4t72v7bd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

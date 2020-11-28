@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/alterar_senha"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="@string/alterar_senha" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        app:boxBackgroundColor="@color/design_default_color_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextSenhaAtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/digite_senha_atual"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        app:boxBackgroundColor="@color/design_default_color_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextSenhaNova"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/digitar_nova_senha"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        app:boxBackgroundColor="@color/design_default_color_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextSenhaNovaRepetir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/repitir_nova_senha"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

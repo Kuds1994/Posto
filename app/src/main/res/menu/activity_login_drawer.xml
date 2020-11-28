@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Minha conta">
+        <menu>
+            <group
+                android:id="@+id/group_conta"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_precos"
+                    android:title="@string/precos" />
+                <item
+                    android:id="@+id/nav_dados"
+                    android:title="@string/dados" />
+            </group>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/group_sair"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sair"
+            android:title="@string/sair" />
+    </group>
+</menu>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Ga$osa</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login">Login</string>
+    <string name="digitar_email">Digite seu e-mail</string>
+    <string name="digitar_senha">Digite sua senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="criar_conta">Quer divulgar seu posto? <u>Crie sua conta</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preencher_formulario">Preencha o formulário para criar sua conta</string>
+    <string name="nome_posto">Nome do posto</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="nome_proprietario">Nome do proprietário</string>
+    <string name="senha">Senha</string>
+    <string name="selecionar_local">Selecionar local no mapa</string>
+    <string name="salvar">Salvar</string>
+    <string name="title_activity_mapa_cadastro">Map</string>
+    <string name="email_cadastro">E-mail</string>
+    <string name="selecionar_mapa">Selecionar local</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_mapa">Posto</string>
+    <string name="cadastrar_navigation">Cadastrar</string>
+    <string name="opcoes">Opções</string>
+    <string name="gasolina">Gasolina</string>
+    <string name="diesel">Diesel</string>
+    <string name="sair">Sair</string>
+    <string name="precos">Meus preços</string>
+    <string name="dados">Meus dados</string>
+    <string name="campo_gasolina">Gasolina comum</string>
+    <string name="campo_gasolina_aditivada">Gasolina aditivada</string>
+    <string name="campo_alcool">Alcool</string>
+    <string name="campo_diesel">Diesel</string>
+    <string name="campo_gnv">GNV</string>
+    <string name="etanol">Etanol</string>
+    <string name="aviso_tornar_evidente">Quer que seu posto seja visualizado por mais clientes? Destaque seu posto.</string>
+    <string name="vantagens">Quais são as vantagens?</string>
+    <string name="mostrar_precos">Preços são mostrados na tela inicial. \n\nUsuários serão notificados quando o algum preço for alterado. \n\nUsuários serão notificados quando estiverem perto do seu posto.</string>
+    <string name="um_dia">1 dia/R$ 5</string>
+    <string name="uma_semana">1 semana/R$ 15</string>
+    <string name="um_mes">"1 mês/R$ 30"</string>
+    <string name="destacar_posto">"Destacar meu posto "</string>
+    <string name="nav_destaque">Destaque seu posto</string>
+    <string name="como_chegar">Como chegar</string>
+    <string name="buscar_combustivel">Busque por combustível</string>
+    <string name="buscar_mais_barato">Buscar postos mais baratos</string>
+    <string name="buscar_mais_perto">Buscar próximo a minha localidade</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="buscar">Buscar</string>
+    <string name="denuncia_1">Preço divulgado está diferente no estabelecimento</string>
+    <string name="denuncia_2">Posto não encontrado na localidade</string>
+    <string name="denuncia_3">Problemas com o atendimento</string>
+    <string name="denuncia_4">Outros</string>
+    <string name="denuncia_hint">"Escreva sua denuncia "</string>
+    <string name="denuncia_titulo">Faça sua denuncia</string>
+    <string name="denuncia_enviar">Enviar</string>
+    <string name="editar">Editar</string>
+    <string name="alterar_senha">Alterar senha</string>
+    <string name="editar_nome" >Editar Nome</string>
+    <string name="excluir_conta">Excluir conta</string>
+    <string name="digite_senha_atual">Digite sua senha atual</string>
+    <string name="digitar_nova_senha">Digite sua nova senha</string>
+    <string name="repitir_nova_senha">Repita a nova senha</string>
+    <string name="aviso_excluir_conta">"Se você excluir sua conta, você não vai conseguir:\n\n" Divulgar seu posto no mapa\nGerenciar seus preços \nUsuários não irão receber preços do seu posto\n\n Caso queira excluir mesmo assim, digite sua senha abaixo</string>
+    <string name="real">R$</string>
+    <string name="fazer_denuncia">Fazer denuncia</string>
+
+</resources>

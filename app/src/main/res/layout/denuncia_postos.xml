@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/denuncia_titulo"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radioDenunciaPostos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/denuncia_1"
+            tools:text="@string/denuncia_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/denuncia_2"
+            tools:text="@string/denuncia_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/denuncia_3"
+            tools:text="@string/denuncia_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/denuncia_4" />
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/denuncia_texto_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        app:boxBackgroundColor="@color/design_default_color_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/denuncia_texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/denuncia_hint"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="false"
+            android:visibility="visible"
+            tools:visibility="visible" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
